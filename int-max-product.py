@@ -15,7 +15,7 @@ class MaxProduct:
         max_product = 0
         # Recursion:
         for n in range(1, num-1):
-            max_product = max(max_product, max(n * num-n, self.maxProductRec(num-n) * n))
+            max_product = max(max_product, max(n * num - n, self.maxProductRec(num - n) * n))
 
         return max_product
 
@@ -30,7 +30,7 @@ class MaxProduct:
 
         for i in range(2, num+1):
             for j in range(1, i):
-                values[i] = max(values[i], max(i - j, values[i-j])*j)
+                values[i] = max(values[i], max(i - j, values[i - j]) * j)
 
         return values[num]
 
