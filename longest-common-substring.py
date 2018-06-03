@@ -18,6 +18,10 @@ Input : X = "zxabcdezy", y = "yzabcdezx"
 Output : 6
 The longest common substring is "abcdez" and is of
 length 6.
+
+
+Returns: LCS length, LCS
+
 '''
 
 class LCS:
