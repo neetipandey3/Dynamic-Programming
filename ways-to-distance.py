@@ -35,7 +35,7 @@ class WaysToDistance:
 
     #Memoization (Dynamic Programming)
     def getWayToDistanceDP(self, dist: int):
-        value_table = [0 for val in range(dist+1)]
+        value_table = [0 for _ in range(dist+1)]
 
         # 1, 1, and 2 ways respectively as base case
         value_table[0] = 1

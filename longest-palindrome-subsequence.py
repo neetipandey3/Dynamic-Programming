@@ -24,7 +24,7 @@ table A[][] to store max length of subsequences
 A[i][j] = {2+ A[i+1][j-1] if s[i]==s[j], or max(A[i+1][j], A[i][j-1])}
 
 Base Case:
-A[i][i] = 1 # for all one character substing
+A[i][i] = 1 # for all one character subsequence
 
 '''
 
@@ -32,7 +32,6 @@ class LongestPalindromicSubSequence:
 
     def LPS_dp(self, s: str):
         str_len = len(s)
-
         table = [[0 for _ in range(str_len)] for _ in range(str_len)]
 
         #Base Case initialization - could already be taken care of during table

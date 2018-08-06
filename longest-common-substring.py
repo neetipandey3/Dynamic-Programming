@@ -27,7 +27,7 @@ Returns: LCS length, LCS
 class LCS:
 
     def lcsDP(self, string1, string2, m, n):
-        value_table = [[0 for val in range(m + 1)] for val in range(n + 1)]
+        value_table = [[0 for _ in range(m + 1)] for _ in range(n + 1)]
         for i in range(1, m+1):
             for j in range(1, n+1):
                 if string1[i-1] == string2[j-1]:
